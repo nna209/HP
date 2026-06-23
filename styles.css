@@ -602,6 +602,145 @@ h2 {
   padding: 92px 0 104px;
 }
 
+.page-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 560px);
+  align-items: center;
+  gap: 70px;
+  padding: 80px 0 74px;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.45;
+}
+
+.page-hero p:not(.eyebrow),
+.company-message p,
+.company-cta p {
+  color: #444;
+  font-weight: 600;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 28px 0 0;
+}
+
+.page-hero-image img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  border-radius: 44% 56% 45% 55% / 32% 40% 60% 68%;
+  box-shadow: var(--shadow);
+}
+
+.company-message {
+  padding: 44px 0 72px;
+}
+
+.company-message h2 {
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+.company-message p {
+  max-width: 860px;
+  margin: 0 0 16px;
+}
+
+.company-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  padding: 0 0 86px;
+}
+
+.value-item {
+  padding: 34px 30px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.value-item span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 24px;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.value-item h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+}
+
+.value-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.company-profile {
+  padding: 0 0 92px;
+}
+
+.profile-list {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.profile-list div {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 30px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-list dt {
+  color: #222;
+  font-weight: 900;
+}
+
+.profile-list dd {
+  margin: 0;
+  color: #444;
+  font-weight: 600;
+}
+
+.profile-list a {
+  color: var(--orange-dark);
+  font-weight: 900;
+}
+
+.company-cta {
+  margin-bottom: 92px;
+  padding: 48px;
+  background: #fff9ef;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.company-cta h2 {
+  margin-bottom: 14px;
+}
+
+.company-cta p {
+  margin: 0 0 28px;
+}
+
 .contact-head {
   max-width: 650px;
   margin-bottom: 34px;
@@ -809,12 +948,18 @@ h2 {
     padding-top: 42px;
   }
 
+  .page-hero {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
   .hero-visual {
     max-width: 620px;
   }
 
   .article-grid,
-  .service-grid {
+  .service-grid,
+  .company-values {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -895,8 +1040,27 @@ h2 {
 
   .article-grid,
   .service-grid,
+  .company-values,
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding: 48px 0 50px;
+  }
+
+  .page-hero h1 {
+    font-size: 34px;
+  }
+
+  .profile-list div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .company-cta {
+    margin-bottom: 64px;
+    padding: 28px 22px;
   }
 
   .contact-form label.full {
