@@ -185,9 +185,58 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact section-narrow">
+        <div class="contact-head">
+          <p class="eyebrow">CONTACT</p>
+          <h2>お問い合わせ</h2>
+          <p>資料請求、サービス内容のご相談、ワークショップ・研修のご依頼など、お気軽にお問い合わせください。</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-grid">
+            <label>
+              <span>会社名</span>
+              <input type="text" name="company" autocomplete="organization">
+            </label>
+            <label>
+              <span>お名前 <em>必須</em></span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>メールアドレス <em>必須</em></span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>電話番号</span>
+              <input type="tel" name="tel" autocomplete="tel">
+            </label>
+            <label class="full">
+              <span>お問い合わせ種別</span>
+              <select name="category">
+                <option value="資料請求">資料請求</option>
+                <option value="サービス相談">サービス相談</option>
+                <option value="ワークショップ・研修">ワークショップ・研修</option>
+                <option value="その他">その他</option>
+              </select>
+            </label>
+            <label class="full">
+              <span>お問い合わせ内容 <em>必須</em></span>
+              <textarea name="message" rows="7" required></textarea>
+            </label>
+          </div>
+          <label class="agree">
+            <input type="checkbox" required>
+            <span>個人情報の取り扱いに同意する</span>
+          </label>
+          <div class="form-action">
+            <button class="button primary" type="submit">送信する</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
     </main>
 
-    <footer id="contact" class="site-footer">
+    <footer class="site-footer">
       <a class="brand" href="#">
         <span class="brand-mark" aria-hidden="true"></span>
         <span>Ena</span>
