@@ -1,5 +1,21 @@
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".global-nav");
+const siteHeader = document.querySelector(".site-header");
+
+if (document.body.classList.contains("home-page") && siteHeader) {
+  const updateHeader = () => {
+    const shouldShow = window.scrollY > 72;
+    siteHeader.classList.toggle("is-visible", shouldShow);
+
+    if (!shouldShow) {
+      nav?.classList.remove("is-open");
+      toggle?.setAttribute("aria-expanded", "false");
+    }
+  };
+
+  window.addEventListener("scroll", updateHeader, { passive: true });
+  updateHeader();
+}
 
 toggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("is-open");
