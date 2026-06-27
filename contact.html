@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>お問い合わせ | Ena</title>
+    <meta name="description" content="株式会社Enaへの資料請求、サービスのご相談はこちらからお問い合わせください。">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Ena ホーム">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Ena</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="global-nav" aria-label="グローバルナビゲーション">
+        <a href="/#home">ホーム</a>
+        <a href="/#service">事業内容</a>
+        <a href="/#flow">導入の流れ</a>
+        <a href="/company">会社情報</a>
+        <a href="/#news">お知らせ</a>
+        <a href="/#blog">ブログ</a>
+        <a class="nav-contact" href="/contact" aria-current="page">お問い合わせ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact contact-page section-narrow">
+        <div class="contact-head">
+          <p class="eyebrow">CONTACT</p>
+          <h1>お問い合わせ</h1>
+          <p>資料請求、サービス内容のご相談、ワークショップ・研修のご依頼など、お気軽にお問い合わせください。</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-grid">
+            <label>
+              <span>会社名</span>
+              <input type="text" name="company" autocomplete="organization">
+            </label>
+            <label>
+              <span>お名前 <em>必須</em></span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>メールアドレス <em>必須</em></span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>電話番号</span>
+              <input type="tel" name="tel" autocomplete="tel">
+            </label>
+            <label class="full">
+              <span>お問い合わせ種別</span>
+              <select name="category">
+                <option value="資料請求">資料請求</option>
+                <option value="サービス相談">サービス相談</option>
+                <option value="ワークショップ・研修">ワークショップ・研修</option>
+                <option value="その他">その他</option>
+              </select>
+            </label>
+            <label class="full">
+              <span>お問い合わせ内容 <em>必須</em></span>
+              <textarea name="message" rows="7" required></textarea>
+            </label>
+          </div>
+          <label class="agree">
+            <input type="checkbox" required>
+            <span>個人情報の取り扱いに同意する</span>
+          </label>
+          <div class="form-action">
+            <button class="button primary" type="submit">送信する</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Ena</span>
+      </a>
+      <nav aria-label="フッターナビゲーション">
+        <a href="/#home">ホーム</a>
+        <a href="/#service">事業内容</a>
+        <a href="/#flow">導入の流れ</a>
+        <a href="/company">会社情報</a>
+        <a href="/#news">お知らせ</a>
+        <a href="/#blog">ブログ</a>
+        <a href="/contact">お問い合わせ</a>
+      </nav>
+      <small>&copy; Ena Inc. All Rights Reserved.</small>
+      <a class="pagetop" href="#" aria-label="ページトップへ">↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

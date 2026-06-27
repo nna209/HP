@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--ink);
   background:
     radial-gradient(circle at 96% 22%, rgba(244, 183, 53, .18) 0 90px, transparent 92px),
@@ -156,7 +157,7 @@ a {
 .hero h1 {
   margin: 0;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: clamp(36px, 4vw, 56px);
+  font-size: clamp(36px, 3.3vw, 46px);
   font-weight: 800;
   line-height: 1.55;
 }
@@ -602,6 +603,17 @@ h2 {
   padding: 92px 0 104px;
 }
 
+.contact-page {
+  min-height: calc(100vh - 190px);
+}
+
+.contact-page h1 {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(36px, 5vw, 54px);
+  line-height: 1.45;
+}
+
 .page-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 560px);
@@ -1016,6 +1028,10 @@ h2 {
 
   .hero-visual img {
     min-height: 250px;
+  }
+
+  .soft-circle {
+    right: -18px;
   }
 
   .section-head {
