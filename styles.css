@@ -196,22 +196,18 @@ a {
   font-weight: 800;
   line-height: 1.55;
   text-shadow: 0 1px 12px rgba(255, 255, 255, .95), 0 1px 2px rgba(255, 255, 255, .9);
+  animation: hero-title-fade 1.4s ease-out both;
 }
 
 .hero h1 span {
   display: block;
-  animation: hero-line-in .9s cubic-bezier(.22, 1, .36, 1) both;
 }
 
-.hero h1 span:nth-child(2) {
-  animation-delay: .16s;
-}
-
-@keyframes hero-line-in {
+@keyframes hero-title-fade {
   from {
     opacity: 0;
-    filter: blur(7px);
-    transform: translateY(22px);
+    filter: blur(4px);
+    transform: translateY(10px);
   }
 
   to {
@@ -1487,16 +1483,16 @@ p {
 
   .hero h1 {
     position: absolute;
-    top: 23svh;
+    top: 12svh;
     left: 24px;
     right: 18px;
     z-index: 2;
     width: auto;
     max-width: none;
     color: #fff;
-    font-size: 26px;
+    font-size: 38px;
     font-weight: 900;
-    line-height: 1.5;
+    line-height: 1.28;
     text-align: left;
     text-shadow: 0 2px 14px rgba(0, 0, 0, .9), 0 1px 3px rgba(0, 0, 0, .95);
   }
@@ -1506,12 +1502,11 @@ p {
     white-space: nowrap;
   }
 
-  .hero h1 strong {
+  .hero h1 .hero-accent {
     color: #f5cf75;
     background: linear-gradient(90deg, #eeb64a 0%, #fff0b7 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight: inherit;
     -webkit-text-fill-color: transparent;
   }
 
@@ -1838,7 +1833,7 @@ p {
 
 @media (max-width: 340px) {
   .hero h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .lead {
@@ -1847,7 +1842,7 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero h1 span {
+  .hero h1 {
     animation: none;
   }
 }
