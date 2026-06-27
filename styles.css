@@ -1503,11 +1503,10 @@ p {
   }
 
   .hero h1 .hero-accent {
-    color: #f5cf75;
-    background: linear-gradient(90deg, #eeb64a 0%, #fff0b7 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffd86b;
+    background: none;
+    -webkit-text-fill-color: #ffd86b;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, .95), 0 0 12px rgba(255, 190, 55, .28);
   }
 
   .lead {
