@@ -155,7 +155,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(480px, .92fr) minmax(560px, 1.08fr);
+  grid-template-columns: minmax(520px, 1fr) minmax(560px, 1fr);
   align-items: center;
   gap: 0;
   width: 100%;
@@ -180,18 +180,18 @@ a {
 }
 
 .hero h1 {
-  width: 820px;
+  width: 690px;
   max-width: none;
   margin: 0;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   line-height: 1.55;
 }
 
 .lead {
   position: relative;
-  width: 700px;
+  width: 600px;
   margin: 34px 0 38px;
   color: #333;
   font-size: 16px;
@@ -271,8 +271,8 @@ a {
   }
 
   .hero h1 {
-    width: 700px;
-    font-size: 52px;
+    width: 620px;
+    font-size: 46px;
   }
 
   .hero-copy {
