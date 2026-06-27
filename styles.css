@@ -208,21 +208,23 @@ a {
 }
 
 .hero-bottom {
-  position: relative;
+  position: absolute;
+  left: 32px;
+  bottom: 36px;
   z-index: 1;
   width: 650px;
   max-width: 100%;
-  padding: 20px 24px 20px 0;
+  padding: 12px 18px;
 }
 
 .hero-bottom::before {
   position: absolute;
-  inset: -12px -80px -12px -120px;
+  inset: -6px -24px -6px -20px;
   z-index: -1;
   content: "";
-  background: linear-gradient(to right, rgba(255, 255, 255, .84) 0%, rgba(255, 255, 255, .68) 66%, rgba(255, 255, 255, 0) 100%);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(to right, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .46) 72%, rgba(255, 255, 255, 0) 100%);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .hero-actions {
@@ -1126,15 +1128,18 @@ h2 {
   }
 
   .hero-bottom {
+    left: 18px;
+    bottom: 20px;
     width: 100%;
-    padding: 14px 0 0;
+    max-width: calc(100% - 36px);
+    padding: 10px 0;
   }
 
   .hero-bottom::before {
-    inset: -10px -18px -14px;
-    background: linear-gradient(to right, rgba(255, 255, 255, .84) 0%, rgba(255, 255, 255, .66) 74%, rgba(255, 255, 255, .18) 100%);
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
+    inset: -5px -8px;
+    background: linear-gradient(to right, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .45) 76%, rgba(255, 255, 255, .08) 100%);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
 
   .hero h1 {
