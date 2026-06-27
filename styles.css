@@ -867,7 +867,7 @@ h2 {
 .site-footer {
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 34px;
   width: min(100% - 64px, 1220px);
@@ -876,7 +876,7 @@ h2 {
 }
 
 .site-footer nav {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .site-footer small {
