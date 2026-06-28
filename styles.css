@@ -1428,6 +1428,11 @@ p {
     background: #fff;
   }
 
+  .home-page .site-header,
+  .home-page .site-header.is-visible {
+    display: none;
+  }
+
   .site-header {
     padding-top: 18px;
   }
