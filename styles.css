@@ -69,12 +69,7 @@ p { color: var(--body); }
 .about-section { padding-block: 175px 180px; }
 .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 85px; }
 .perspectives { min-width: 0; }
-.venn { position: relative; width: 440px; max-width: 100%; height: 300px; margin-inline: auto; }
-.venn-circle { position: absolute; top: 0; width: 62%; height: 90%; border: 1px solid; border-radius: 50%; display: flex; align-items: center; }
-.venn-young { left: 0; background: #8caec714; border-color: #bdcfde; justify-content: flex-start; }
-.venn-company { right: 0; background: #c9b18317; border-color: #dfcfaf; justify-content: flex-end; }
-.venn-circle span { width: 57%; text-align: center; font-size: 14px; padding-bottom: 2px; }
-.venn-center { position: absolute; left: 31%; top: 32%; width: 38%; color: #66869c; font-size: 15px; text-align: center; line-height: 2; }
+.perspectives img { width: 100%; height: auto; }
 .perspectives figcaption { margin-top: 32px; text-align: center; color: #788f9f; font-size: 10px; }
 .service-section { background: var(--pale); }
 .section-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 60px; }
@@ -317,11 +312,7 @@ textarea { resize: vertical; }
   .body-copy p + p { margin-top: 26px; }
   .about-grid { gap: 45px; }
   .about-grid h2 { font-size: 25px; }
-  .venn { width: 370px; height: 245px; }
-  .venn-circle { height: auto; aspect-ratio: 1; }
-  .venn-circle span { font-size: 12px; }
-  .venn-center { top: 31%; font-size: 12px; }
-  .perspectives figcaption { margin-top: 5px; font-size: 8px; }
+  .perspectives figcaption { margin-top: 16px; font-size: 8px; }
   .mobile-break { display: block; }
   .section-intro h2 { font-size: 27px; }
   .section-intro > p { margin-top: 24px; }
@@ -398,8 +389,6 @@ textarea { resize: vertical; }
   .about-grid h2 { font-size: 22px; }
   h2, .section-intro h2, .students-copy h2, .message-copy h2 { font-size: 23px; }
   .contact-band h2 { font-size: 22px; }
-  .venn { height: 200px; }
-  .venn-circle span, .venn-center { font-size: 10px; }
   .brand-company { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
