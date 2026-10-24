@@ -3,21 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>会社情報 | Ena</title>
+    <title>会社概要 | 株式会社Ena</title>
     <meta name="description" content="株式会社Enaの会社情報、ミッション、事業内容、会社概要をご紹介します。">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/assets/ena-logo.png">
   </head>
   <body>
     <header class="site-header">
-      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="global-nav" aria-label="グローバルナビゲーション">
-        <a href="/#home">ホーム</a>
-        <a href="/#service">事業内容</a>
-        <a href="/company">会社情報</a>
-        <a class="nav-contact" href="/contact">お問い合わせ</a>
+      <a class="brand" href="/" aria-label="株式会社Ena トップページ"><img src="/assets/ena-logo.png" width="38" height="42" alt=""><span class="wordmark">Ena.</span><span class="brand-company">株式会社Ena</span></a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span><span></span></button>
+      <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
+        <a href="/#about">私たちについて</a><a href="/#service">事業紹介</a><a href="/#projects">活動紹介</a><a href="/students">学生の方へ</a><a href="/company" aria-current="page">会社概要</a><a class="nav-contact" href="/contact">お問い合わせ <span aria-hidden="true">→</span></a>
       </nav>
     </header>
 
@@ -25,8 +21,8 @@
       <section class="page-hero section-pad">
         <div class="page-hero-copy">
           <p class="eyebrow">COMPANY</p>
-          <h1>株式会社Enaについて</h1>
-          <p>若手の視点を起点に、企業の新しい価値と可能性を生み出す。<br>Enaは、世代を越えた共創によって、組織の未来を前へ進めるパートナーです。</p>
+          <h1>人や組織に、<br>外からの新しい視点を。</h1>
+          <p>次世代の視点と企業の経験を掛け合わせ、採用・人財育成・組織の課題解決を支援します。<br>世代を越えた対話から、新しい可能性をつくる会社です。</p>
         </div>
         <div class="page-hero-image">
           <img src="assets/about-team.jpg" alt="明るいオフィスで対話しながら歩く若手と社員">
@@ -72,7 +68,7 @@
           </div>
           <div>
             <dt>事業内容</dt>
-            <dd>次世代視点導入プログラム、若手インサイト事業</dd>
+            <dd>次世代視点導入プログラムを通じた採用・社員教育・組織の課題解決支援</dd>
           </div>
           <div>
             <dt>所在地</dt>
@@ -98,14 +94,9 @@
     </main>
 
     <footer class="site-footer">
-      <nav aria-label="フッターナビゲーション">
-        <a href="/#home">ホーム</a>
-        <a href="/#service">事業内容</a>
-        <a href="/company">会社情報</a>
-        <a href="/contact">お問い合わせ</a>
-      </nav>
-      <small>&copy; Ena Inc. All Rights Reserved.</small>
-      <a class="pagetop" href="#" aria-label="ページトップへ">↑</a>
+      <div class="footer-brand"><a class="brand" href="/" aria-label="株式会社Ena トップページ"><img src="/assets/ena-logo.png" width="32" height="35" alt=""><span class="wordmark">Ena.</span></a><p>人や組織に、外からの新しい視点を。</p></div>
+      <nav aria-label="フッターナビゲーション"><a href="/">トップ</a><a href="/#service">事業紹介</a><a href="/students">学生の方へ</a><a href="/company">会社概要</a><a href="/contact">お問い合わせ</a></nav>
+      <small>© 2026 Ena Inc.</small>
     </footer>
 
     <script src="script.js"></script>

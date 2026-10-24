@@ -1,2 +1,13 @@
-/ChatGPT Image*.png
-/screencapture-*.png
+# Only public website files may be uploaded.
+/*
+!/index.html
+!/company.html
+!/contact.html
+!/students.html
+!/service-program.html
+!/service-insight.html
+!/styles.css
+!/script.js
+!/vercel.json
+!/assets
+/assets/reference.png
