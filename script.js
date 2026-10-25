@@ -49,5 +49,5 @@ contactForm?.addEventListener("submit", (event) => {
   const subject = encodeURIComponent("Enaサイトからのお問い合わせ");
   const body = encodeURIComponent(lines.join("\n"));
   window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
-  if (formMessage) formMessage.textContent = "メールアプリで内容をご確認のうえ、送信してください。開かない場合は nomuraena@e-na.jp へ直接お送りください。この画面ではまだ送信されていません。";
+  if (formMessage) formMessage.textContent = "メールアプリで内容をご確認のうえ、送信してください。開かない場合は、端末のメールアプリの設定をご確認ください。この画面ではまだ送信されていません。";
 });
